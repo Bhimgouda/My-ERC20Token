@@ -47,19 +47,22 @@ module.exports = {
       url: SEPOLIA_RPC_URL,
       accounts: PRIVATE_KEY ? [PRIVATE_KEY] : [],
       saveDeployments: true,
-      chainId: 11155111
+      chainId: 11155111,
+      blockConfirmations: 5
     },
     mainnet:{
       url: MAINNET_RPC_URL,
       accounts: PRIVATE_KEY ? [PRIVATE_KEY] : [],
       saveDeployments: true,
-      chainId: 1
+      chainId: 1,
+      blockConfirmations: 5
     },
     polygon: {
       url: POLYGON_MAINNET_RPC_URL,
       accounts: PRIVATE_KEY ? [PRIVATE_KEY] : [],
       saveDeployments: true,
-      chainId: 137
+      chainId: 137,
+      blockConfirmations: 5
     }
   },
   namedAccounts: {

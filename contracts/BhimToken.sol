@@ -11,10 +11,10 @@ contract BhimToken {
     string private i_name;
     string private i_symbol;
 
-    constructor(string memory _name, string memory _symbol, uint256 _initialSupply) {
+    constructor(string memory _name, string memory _symbol, uint256 _initialTokenSupply) {
         i_name = _name;
         i_symbol = _symbol;
-        _mint(msg.sender, _initialSupply);
+        _mint(msg.sender, _initialTokenSupply);
     }
 
     event Transfer(address indexed from, address indexed to, uint256 value);
